@@ -1,0 +1,10 @@
+#Options +FollowSymLinks
+#Redirect /start.php /index.php
+
+#Options +FollowSymLinks
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule .* index.php [L]
